@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <h2>Factorial</h2>
+    <form onsubmit="submit_form(event)">
+        <label for="enterNum">Number:</label><br>
+        <input type="number" id="enterNum" name="enterNum" placeholder="Enter Number" value="" autocomplete="off" required><br>
+        <input type="submit" value="Submit" style="margin-top: 10px;">
+    </form> 
+    <h3 style="margin-top: 20px;">:: Result :: <br> <span id="result-value"></span></h3>
+
+    <script type="text/javascript">  
+        function submit_form(e){  
+            e.preventDefault();
+            
+            var num = document.getElementById('enterNum').value;
+            var res = num != '' ? factorialFunc(num) : 0
+            document.getElementById('result-value').innerHTML = res
+        }  
+        function factorialFunc(num = 0) {
+            if (num === 0) {
+                return 1;
+            }
+            else {
+                return num * factorialFunc(num - 1);
+            }
+        }
+    </script>  
+</body>
+</html>
