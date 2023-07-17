@@ -50,9 +50,9 @@ $datas = file_get_contents('https://super7tech.com/web_developer_exam_sr/json/sl
     <div class="container d-flex align-items-center justify-content-first">
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">TenTang OLE777</a></li>
-          <li><a class="nav-link scrollto" href="#counts">Komisi</a></li>
-          <li><a class="nav-link scrollto" href="#about-video">Peraturan</a></li>
+          <li><a class="nav-link scrollto active" href="#banner">TenTang OLE777</a></li>
+          <li><a class="nav-link scrollto" href="#box-detail">Komisi</a></li>
+          <li><a class="nav-link scrollto" href="#services">Peraturan</a></li>
           <li><a class="nav-link scrollto" href="#about">Pertanyaan & Jawaban</a></li>
           <li></li>
         </ul>
